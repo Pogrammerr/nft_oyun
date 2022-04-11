@@ -56,7 +56,7 @@ a:hover {
 
 
 #wrapper{
-  background-image: url("../images/whitepaper/background.png");
+  background-image: url(../images/whitepaper/background.png);
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
