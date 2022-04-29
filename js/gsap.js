@@ -75,10 +75,10 @@ function setGSAP(){
         scrub: 4,
     });
 
-    scene2.fromTo("#h2-1", { y: 500, opacity: 0 }, { y: 0, opacity: 1 }, 0)
+    scene2.fromTo("#h2-1", { y: 900, opacity: 0 }, { y: 0, opacity: 1 }, 0)
     scene2.fromTo("#h2-2", { y: 500 }, { y: 0 }, 0.1)
     scene2.fromTo("#h2-3", { y: 700 }, { y: 0 }, 0.1)
-    scene2.fromTo("#h2-4", { y: 700 }, { y: 0 }, 0.2)
+    scene2.fromTo("#h2-4", { y: 1000 }, { y: 200 }, 0.2)
     scene2.fromTo("#h2-5", { y: 800 }, { y: 0 }, 0.3)
     scene2.fromTo("#h2-6", { y: 900 }, { y: 0 }, 0.3)
 
@@ -146,7 +146,7 @@ function setGSAP(){
 
     //Hills motion
     scene3.fromTo("#h3-1", { y: 300 }, { y: -550 }, 0)
-    scene3.fromTo("#h3-2", { y: 800 }, { y: -400 }, 0.03)
+    scene3.fromTo("#h3-2", { y: 800 }, { y: -400, x:-100 }, 0.03)
     scene3.fromTo("#h3-3", { y: 600 }, { y: -550 }, 0.06)
     scene3.fromTo("#h3-4", { y: 800 }, { y: -550 }, 0.09)
     scene3.fromTo("#h3-5", { y: 1000 }, { y: -550 }, 0.12)
@@ -155,8 +155,7 @@ function setGSAP(){
     scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0)
 
     // Scroll Back text
-    scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25)
-    scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3)
+    scene3.fromTo("#text-2", { x:400, y: 700, opacity: 0 }, { x:400, y: 500,opacity: 1 }, 0.12)
 
     //gradient value change
     scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0)
