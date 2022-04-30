@@ -929,7 +929,7 @@ header.header-mobile {
 	position: fixed !important;
     top: 0;
 	background:#fff;
-	height:90px;
+	height:120px;
 }
 header.header-mobile.has-topbar{
 	height:100px;
