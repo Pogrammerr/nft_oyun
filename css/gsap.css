@@ -50,12 +50,21 @@ svg {
     transition: all .3s;
     z-index: 11;
   }
-  .final-text{
-    position: fixed;
+.neon {
+    margin-bottom: 250px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+      0 0 5px #000
+}
+.home-text p{
+  color: #fff;
+  margin-bottom: 60px;
+  margin-right: -54px;
+}
+.home-text-2{
+  margin-top: 2500px;
     padding: 40px;
-    right: 40px;
-    left:-692PX;
-    opacity:0.8;
+    opacity:1;
     text-shadow: 0px 0px #000;
     font-size: 0.9rem;
     padding: 0.5rem 0.7em;
@@ -66,7 +75,22 @@ svg {
     cursor: pointer;
     transition: all .3s;
     z-index: 11;
-  }
+}
+.home-text-3{
+    margin-top:2950px;
+    padding: 40px;
+    opacity:1;
+    text-shadow: 0px 0px #000;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7em;
+    background-color: transparent;
+    color: rgb(255, 255, 255) !important ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 11;
+}
     .btn-wp{
       position: fixed;
       bottom: 10%;
@@ -197,4 +221,12 @@ svg {
 
 .social-links a:hover {
   transform: translateY(-10px);
+}
+#mainmenu li:hover{
+  transform: translateY(-2px);
+}
+@media only screen and (max-width: 1000px) {
+  .logo-text{
+    display: none !important
+  }
 }

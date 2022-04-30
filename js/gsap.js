@@ -18,7 +18,7 @@ function setGSAP(){
     scene1.to("#h1-2", { y: 2.6 * speed, x: -0.6 * speed, ease: "power1.in" }, 0)
     scene1.to("#h1-3", { y: 1.7 * speed, x: 1.2 * speed }, 0.03)
     scene1.to("#h1-4", { y: 3 * speed, x: 1 * speed }, 0.03)
-    scene1.to("#h1-5", { y: 2 * speed, x: 1 * speed }, 0.03)
+    scene1.fromTo("#h1-5", { y: 250, opacity:1 }, { y: 200, opacity:0 }, 0.3)
     scene1.to("#h1-6", { y: 2.3 * speed, x: -2.5 * speed }, 0)
     scene1.to("#h1-7", { y: 5 * speed, x: 1.6 * speed }, 0)
     scene1.to("#h1-8", { y: 3.5 * speed, x: 0.2 * speed }, 0)
@@ -78,11 +78,10 @@ function setGSAP(){
     scene2.fromTo("#h2-1", { y: 900, opacity: 0 }, { y: 0, opacity: 1 }, 0)
     scene2.fromTo("#h2-2", { y: 500 }, { y: 0 }, 0.1)
     scene2.fromTo("#h2-3", { y: 700 }, { y: 0 }, 0.1)
-    scene2.fromTo("#h2-4", { y: 1000 }, { y: 200 }, 0.2)
+    scene2.fromTo("#h2-4", { y: 1500 }, { y: 100 }, 0.2)
     scene2.fromTo("#h2-5", { y: 800 }, { y: 0 }, 0.3)
     scene2.fromTo("#h2-6", { y: 900 }, { y: 0 }, 0.3)
-
-
+   
 
     gsap.fromTo("#bats", { opacity: 1 }, {
         y: 400,
@@ -150,12 +149,10 @@ function setGSAP(){
     scene3.fromTo("#h3-3", { y: 600 }, { y: -550 }, 0.06)
     scene3.fromTo("#h3-4", { y: 800 }, { y: -550 }, 0.09)
     scene3.fromTo("#h3-5", { y: 1000 }, { y: -550 }, 0.12)
-
+    scene3.fromTo("#text-2", { y: 1000 }, { y: 0 }, 0.12)
     //stars
     scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0)
 
-    // Scroll Back text
-    scene3.fromTo("#text-2", { x:400, y: 700, opacity: 0 }, { x:400, y: 500,opacity: 1 }, 0.12)
 
     //gradient value change
     scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0)
@@ -182,17 +179,23 @@ function setGSAP(){
             trigger: ".scrollElement",
             start: "100 top",
             end: "500 100%",
-            scrub: 5,
-            onEnter: function() { gsap.set("#fstar", { opacity: 1 }) },
-            onLeave: function() { gsap.set("#fstar", { opacity: 0 }) },
+            scrub: 5
         }
-    })          
-}
-setGSAP();
+    })  
+    gsap.to("#text-3", {
+        x: -700,
+        y: -500,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".scrollElement",
+            start: "4000 top",
+            end: "6000 100%",
+            scrub: 1
+        }
+    });
 
 
-
-//reset scrollbar position after refresh
-window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
-}
+    //reset scrollbar position after refresh
+    window.onbeforeunload = function() {
+        window.scrollTo(0, 0);
+    }}
