@@ -101,8 +101,8 @@ svg {
     opacity: 0;
   }
 .top-arr{
-  width: 2em; 
-  height: 2em; 
+  width: 4em; 
+  height: 4em; 
   background-color: transparent; 
   z-index: 80; 
   bottom: 25px; 
@@ -113,8 +113,8 @@ svg {
   animation: scrolldown 1.2s ease-in-out infinite 0.15s;
 } 
 .bottom-arr{
-  width: 2em; 
-  height: 2em; 
+  width: 4em; 
+  height: 4em; 
   background-color: transparent; 
   z-index: 80; 
   bottom: 40px; 
