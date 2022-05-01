@@ -1,3 +1,7 @@
+
+.custom-font {
+  font-family: "Noto Sans Mono", monospace !important;
+}
 svg {
       display: block;
       width: 100%;
@@ -26,7 +30,6 @@ svg {
       padding: 0.5rem 0.7em;
       background-color: transparent;
       color: #ffffff;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
       transition: all .3s;
@@ -44,7 +47,6 @@ svg {
     padding: 0.5rem 0.7em;
     background-color: transparent;
     color: rgba(0, 0, 0, 1) !important ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
     transition: all .3s;
@@ -72,7 +74,6 @@ svg {
     padding: 0.5rem 0.7em;
     background-color: transparent;
     color: rgba(0, 0, 0, 1) !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
     transition: all .3s;
@@ -87,7 +88,6 @@ svg {
     padding: 0.5rem 0.7em;
     background-color: transparent;
     color: rgb(255, 255, 255) !important ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
     transition: all .3s;
@@ -104,7 +104,6 @@ svg {
       padding: 0.5rem 0.7em;
       background-color: transparent;
       color: #ffffff;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
       transition: all .3s;
@@ -226,6 +225,9 @@ svg {
 }
 #mainmenu li:hover{
   transform: translateY(-2px);
+}
+a.btn-custom:hover{
+  background-color: transparent !important;
 }
 @media only screen and (max-width: 1000px) {
   .logo-text{
