@@ -657,7 +657,7 @@ h6 {
 }
 
 .portfolio-item:nth-child(10) > .item-card > div > picture::before {
-  content: "INVERSTMENT POOL";
+  content: "INVESTMENT POOL";
 }
 
 .portfolio-item:nth-child(11) > .item-card > div > picture::before {

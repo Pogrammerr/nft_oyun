@@ -62,14 +62,16 @@ svg {
   margin-right: -54px;
 }
 .home-text-2{
-  margin-top: 2500px;
-    padding: 40px;
-    opacity:1;
+    background-color: #fcf6f0 !important;
+    margin-top: 2500px;
+    padding: 40px !important;
+    background-color: blueviolet;
+    opacity: 0.9 !important;
     text-shadow: 0px 0px #000;
     font-size: 0.9rem;
     padding: 0.5rem 0.7em;
     background-color: transparent;
-    color: rgba(0, 0, 0, 1) !important ;
+    color: rgba(0, 0, 0, 1) !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
@@ -78,7 +80,7 @@ svg {
 }
 .home-text-3{
     margin-top:2950px;
-    padding: 40px;
+    padding: 40px !important;
     opacity:1;
     text-shadow: 0px 0px #000;
     font-size: 0.9rem;
