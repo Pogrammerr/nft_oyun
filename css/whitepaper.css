@@ -888,17 +888,26 @@ h6 {
   .portfolio-logo {
     right: 30%;
   }
+  .portfolio-intro {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 600px) {
   .portfolio-logo {
     transform: scale(0.6);
   }
+  .portfolio-intro {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 565px) {
   .portfolio-logo {
     right: 31%;
+  }
+  .portfolio-intro {
+    padding: 0px;
   }
 }
 
@@ -911,6 +920,9 @@ h6 {
 @media (max-width: 480px) {
   .item-card > div:nth-child(1) {
     width: 260px;
+  }
+  .portfolio-intro {
+    padding: 0px;
   }
 }
 
@@ -928,6 +940,9 @@ h6 {
   .portfolio-intro {
     width: 93%;
   }
+  .portfolio-intro {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -936,5 +951,8 @@ h6 {
   }
   .item-card > div > picture::before {
     font-size: 18pt;
+  }
+  .portfolio-intro {
+    padding: 0px;
   }
 }

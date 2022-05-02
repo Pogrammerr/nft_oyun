@@ -234,3 +234,8 @@ a.btn-custom:hover{
     display: none !important
   }
 }
+@media only screen and (max-width: 376px) {
+  .neon {
+    margin-bottom: 100px;
+}
+}
