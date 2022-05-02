@@ -10,7 +10,9 @@ svg {
       top: 0;
       left: 0;
 }
-  
+.cstm-font-size{
+  font-size: 1.2rem !important;
+}  
 .scrollElement {
       position: absolute;
       height: 6000px;
@@ -236,6 +238,6 @@ a.btn-custom:hover{
 }
 @media only screen and (max-width: 376px) {
   .neon {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 }
