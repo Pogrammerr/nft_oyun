@@ -219,17 +219,22 @@ svg {
 }
 
 .social-links a:hover .fab {
-  color: #fff;
+  color: rgb(200, 197, 197);
 }
 
 .social-links a:hover {
   transform: translateY(-10px);
 }
-#mainmenu li:hover{
+
+.navbar-hov:hover{
   transform: translateY(-2px);
 }
 a.btn-custom:hover{
   background-color: transparent !important;
+}
+.scroll-font{
+  background-color: black; 
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 1000px) {
   .logo-text{
